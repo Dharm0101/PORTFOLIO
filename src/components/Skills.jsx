@@ -81,7 +81,7 @@ export const Skills = () => {
           {filteredCategories.map((category) => (
             <div
               key={category.id}
-              className="glass-panel"
+              className="glass-panel skill-card"
               style={{
                 padding: '32px',
                 display: 'flex',
@@ -189,6 +189,11 @@ export const Skills = () => {
         @media (max-width: 860px) {
           .skills-grid {
             grid-template-columns: 1fr !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .skill-card {
+            padding: 20px 16px !important;
           }
         }
       `}</style>

@@ -29,6 +29,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
 
   return (
     <div
+      className="resume-backdrop"
       style={{
         position: 'fixed',
         inset: 0,
@@ -170,7 +171,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
             <h3 style={{ fontSize: '1.05rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--accent-primary)', marginBottom: '14px' }}>
               Technical Proficiencies (Frontend & Backend Only)
             </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }}>
+            <div className="resume-skills-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }}>
               {skills.categories.map((cat) => (
                 <div key={cat.id} style={{ background: 'rgba(255,255,255,0.03)', padding: '16px', borderRadius: '12px', border: '1px solid var(--border-glass)' }}>
                   <strong style={{ fontSize: '0.92rem', color: 'var(--accent-cyan)', display: 'block', marginBottom: '8px' }}>
@@ -192,7 +193,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {portfolioData.projects.map((proj) => (
                 <div key={proj.id} style={{ background: 'rgba(255,255,255,0.02)', padding: '18px', borderRadius: '12px', border: '1px solid var(--border-glass)' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
+                  <div className="resume-project-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '8px', marginBottom: '6px' }}>
                     <strong style={{ fontSize: '1.02rem', color: 'var(--text-primary)' }}>{proj.title}</strong>
                     <div style={{ display: 'flex', gap: '10px', fontSize: '0.82rem' }}>
                       {proj.liveUrl && (
@@ -226,6 +227,24 @@ export const ResumeModal = ({ isOpen, onClose }) => {
       </div>
 
       <style>{`
+        @media (max-width: 640px) {
+          .resume-backdrop {
+            padding: 10px !important;
+          }
+          .resume-container {
+            padding: 20px 16px !important;
+            max-height: 94vh !important;
+            border-radius: 14px !important;
+          }
+          .resume-skills-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .resume-project-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 6px !important;
+          }
+        }
         @media print {
           .no-print { display: none !important; }
           body { background: white !important; color: black !important; }

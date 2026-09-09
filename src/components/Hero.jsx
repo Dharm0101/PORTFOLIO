@@ -220,6 +220,7 @@ export const Hero = ({ onOpenTerminal, onOpenResume }) => {
 
           {/* Action Buttons */}
           <div
+            className="hero-actions"
             style={{
               display: 'flex',
               flexWrap: 'wrap',
@@ -321,6 +322,15 @@ export const Hero = ({ onOpenTerminal, onOpenResume }) => {
           }
           .hero-content > div:last-child {
             justify-content: center;
+          }
+        }
+        @media (max-width: 520px) {
+          .hero-actions {
+            flex-direction: column;
+            gap: 12px !important;
+          }
+          .hero-actions .btn {
+            width: 100% !important;
           }
         }
       `}</style>

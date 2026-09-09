@@ -19,6 +19,7 @@ export const ProjectModal = ({ project, onClose }) => {
 
   return (
     <div
+      className="project-modal-backdrop"
       style={{
         position: 'fixed',
         top: 0,
@@ -37,7 +38,7 @@ export const ProjectModal = ({ project, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="glass-panel"
+        className="glass-panel project-modal-dialog"
         style={{
           maxWidth: '850px',
           width: '100%',
@@ -79,6 +80,7 @@ export const ProjectModal = ({ project, onClose }) => {
 
         {/* Project Header Image */}
         <div
+          className="project-modal-image"
           style={{
             width: '100%',
             height: '340px',
@@ -197,6 +199,7 @@ export const ProjectModal = ({ project, onClose }) => {
 
         {/* Action Buttons */}
         <div
+          className="project-modal-actions"
           style={{
             display: 'flex',
             flexWrap: 'wrap',
@@ -227,6 +230,30 @@ export const ProjectModal = ({ project, onClose }) => {
           </a>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .project-modal-backdrop {
+            padding: 10px !important;
+          }
+          .project-modal-dialog {
+            padding: 20px 16px !important;
+            max-height: 94vh !important;
+            border-radius: 16px !important;
+          }
+          .project-modal-image {
+            height: 190px !important;
+            margin-bottom: 18px !important;
+          }
+          .project-modal-actions {
+            flex-direction: column !important;
+          }
+          .project-modal-actions .btn {
+            width: 100% !important;
+            min-width: unset !important;
+          }
+        }
+      `}</style>
     </div>
   );
 };

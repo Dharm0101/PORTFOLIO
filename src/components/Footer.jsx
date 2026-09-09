@@ -21,6 +21,7 @@ export const Footer = () => {
     >
       <div className="container">
         <div
+          className="footer-top"
           style={{
             display: 'flex',
             flexWrap: 'wrap',
@@ -113,6 +114,7 @@ export const Footer = () => {
 
         {/* Bottom Bar */}
         <div
+          className="footer-bottom"
           style={{
             borderTop: '1px solid var(--border-glass)',
             paddingTop: '24px',
@@ -133,6 +135,21 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .footer-top {
+            flex-direction: column;
+            align-items: flex-start !important;
+            gap: 20px !important;
+          }
+          .footer-bottom {
+            flex-direction: column;
+            align-items: flex-start !important;
+            gap: 10px !important;
+          }
+        }
+      `}</style>
     </footer>
   );
 };

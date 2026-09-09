@@ -77,6 +77,7 @@ export const Projects = ({ onSelectProject }) => {
             >
               {/* Card Image Banner */}
               <div
+                className="project-banner"
                 style={{
                   position: 'relative',
                   width: '100%',
@@ -142,6 +143,7 @@ export const Projects = ({ onSelectProject }) => {
 
               {/* Card Content Body */}
               <div
+                className="project-body"
                 style={{
                   padding: '28px',
                   display: 'flex',
@@ -280,6 +282,17 @@ export const Projects = ({ onSelectProject }) => {
         @media (max-width: 900px) {
           .projects-grid {
             grid-template-columns: 1fr !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .project-banner {
+            height: 200px !important;
+          }
+          .project-body {
+            padding: 20px 16px !important;
+          }
+          .projects-grid {
+            gap: 20px !important;
           }
         }
       `}</style>

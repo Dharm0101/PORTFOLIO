@@ -237,6 +237,11 @@ export const Navbar = ({ theme, setTheme, onOpenTerminal, onOpenResume }) => {
 
       {/* Responsive Inline CSS */}
       <style>{`
+        @media (max-width: 480px) {
+          .cli-text {
+            display: none !important;
+          }
+        }
         @media (min-width: 820px) {
           .desktop-nav { display: flex !important; }
           .desktop-only { display: flex !important; }

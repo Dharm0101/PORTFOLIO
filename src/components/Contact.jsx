@@ -83,7 +83,7 @@ export const Contact = ({ onShowToast }) => {
           {/* Left: Contact Info Cards */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <div
-              className="glass-panel"
+              className="glass-panel contact-info-card"
               style={{
                 padding: '32px',
                 display: 'flex',
@@ -102,6 +102,7 @@ export const Contact = ({ onShowToast }) => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
+                  flexShrink: 0,
                 }}
               >
                 <Mail size={24} />
@@ -117,6 +118,7 @@ export const Contact = ({ onShowToast }) => {
                     fontSize: '1.05rem',
                     fontWeight: 600,
                     textDecoration: 'none',
+                    wordBreak: 'break-all',
                   }}
                   onMouseEnter={(e) => (e.target.style.color = 'var(--accent-cyan)')}
                   onMouseLeave={(e) => (e.target.style.color = 'var(--text-primary)')}
@@ -127,7 +129,7 @@ export const Contact = ({ onShowToast }) => {
             </div>
 
             <div
-              className="glass-panel"
+              className="glass-panel contact-info-card"
               style={{
                 padding: '32px',
                 display: 'flex',
@@ -146,6 +148,7 @@ export const Contact = ({ onShowToast }) => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
+                  flexShrink: 0,
                 }}
               >
                 <MapPin size={24} />
@@ -161,7 +164,7 @@ export const Contact = ({ onShowToast }) => {
             </div>
 
             <div
-              className="glass-panel"
+              className="glass-panel contact-info-card"
               style={{
                 padding: '32px',
               }}
@@ -181,7 +184,7 @@ export const Contact = ({ onShowToast }) => {
 
           {/* Right: Contact Form */}
           <div
-            className="glass-panel"
+            className="glass-panel contact-form-panel"
             style={{
               padding: '36px',
             }}
@@ -347,7 +350,7 @@ export const Contact = ({ onShowToast }) => {
 
               <button
                 type="submit"
-                className="btn btn-primary"
+                className="btn btn-primary contact-submit-btn"
                 disabled={submitting}
                 style={{
                   alignSelf: 'flex-start',
@@ -380,6 +383,19 @@ export const Contact = ({ onShowToast }) => {
           }
           .form-row {
             grid-template-columns: 1fr !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .contact-info-card {
+            padding: 20px 16px !important;
+            gap: 14px !important;
+          }
+          .contact-form-panel {
+            padding: 20px 16px !important;
+          }
+          .contact-submit-btn {
+            width: 100% !important;
+            align-self: stretch !important;
           }
         }
       `}</style>

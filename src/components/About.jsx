@@ -89,7 +89,7 @@ export const About = ({ onOpenResume }) => {
         >
           {/* Left Bio Card */}
           <div
-            className="glass-panel"
+            className="glass-panel about-bio-card"
             style={{
               padding: '36px',
             }}
@@ -149,7 +149,7 @@ export const About = ({ onOpenResume }) => {
             {pillars.map((pillar, index) => (
               <div
                 key={index}
-                className="glass-panel"
+                className="glass-panel pillar-card"
                 style={{
                   padding: '28px',
                   display: 'flex',
@@ -166,6 +166,7 @@ export const About = ({ onOpenResume }) => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    flexShrink: 0,
                   }}
                 >
                   {pillar.icon}
@@ -194,6 +195,15 @@ export const About = ({ onOpenResume }) => {
         @media (max-width: 900px) {
           .about-split {
             grid-template-columns: 1fr !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .about-bio-card {
+            padding: 20px 16px !important;
+          }
+          .pillar-card {
+            padding: 20px 16px !important;
+            gap: 14px !important;
           }
         }
       `}</style>

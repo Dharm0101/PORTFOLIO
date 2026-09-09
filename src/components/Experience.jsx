@@ -31,6 +31,7 @@ export const Experience = () => {
         >
           {/* Vertical Timeline Bar */}
           <div
+            className="timeline-line"
             style={{
               position: 'absolute',
               top: 0,
@@ -51,6 +52,7 @@ export const Experience = () => {
             >
               {/* Timeline Node Point */}
               <div
+                className="timeline-node"
                 style={{
                   position: 'absolute',
                   top: '24px',
@@ -79,7 +81,7 @@ export const Experience = () => {
 
               {/* Timeline Content Card */}
               <div
-                className="glass-panel"
+                className="glass-panel timeline-card"
                 style={{
                   padding: '32px',
                   borderRadius: '20px',
@@ -111,6 +113,7 @@ export const Experience = () => {
                   </div>
 
                   <div
+                    className="timeline-meta"
                     style={{
                       display: 'flex',
                       flexDirection: 'column',
@@ -184,6 +187,30 @@ export const Experience = () => {
           ))}
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .timeline-container {
+            padding-left: 20px !important;
+          }
+          .timeline-line {
+            left: 7px !important;
+          }
+          .timeline-node {
+            left: -20px !important;
+            width: 16px !important;
+            height: 16px !important;
+            top: 26px !important;
+          }
+          .timeline-card {
+            padding: 20px 16px !important;
+            border-radius: 16px !important;
+          }
+          .timeline-meta {
+            align-items: flex-start !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };

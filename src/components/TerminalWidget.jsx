@@ -75,6 +75,7 @@ export const TerminalWidget = ({ isOpen, onClose, onCycleTheme }) => {
 
   return (
     <div
+      className="terminal-backdrop"
       style={{
         position: 'fixed',
         inset: 0,
@@ -90,7 +91,7 @@ export const TerminalWidget = ({ isOpen, onClose, onCycleTheme }) => {
       onClick={onClose}
     >
       <div
-        className="glass-panel"
+        className="glass-panel terminal-window"
         style={{
           width: '100%',
           maxWidth: '820px',
@@ -149,6 +150,7 @@ export const TerminalWidget = ({ isOpen, onClose, onCycleTheme }) => {
 
         {/* Terminal Content Screen */}
         <div
+          className="terminal-content"
           style={{
             flex: 1,
             padding: '20px',
@@ -184,7 +186,8 @@ export const TerminalWidget = ({ isOpen, onClose, onCycleTheme }) => {
           {/* Active Input Line */}
           <div style={{ display: 'flex', alignItems: 'center', marginTop: '6px' }}>
             <span style={{ color: 'var(--accent-cyan)', marginRight: '8px', userSelect: 'none' }}>
-              dharm@portfolio:~$
+              <span className="terminal-prompt-full">dharm@portfolio:~$</span>
+              <span className="terminal-prompt-short">~$</span>
             </span>
             <input
               ref={inputRef}
@@ -211,6 +214,7 @@ export const TerminalWidget = ({ isOpen, onClose, onCycleTheme }) => {
 
         {/* Footer help bar */}
         <div
+          className="terminal-footer"
           style={{
             padding: '8px 18px',
             background: 'rgba(8, 12, 18, 0.9)',
@@ -227,6 +231,41 @@ export const TerminalWidget = ({ isOpen, onClose, onCycleTheme }) => {
           <span>Press ESC to exit</span>
         </div>
       </div>
+
+      <style>{`
+        .terminal-prompt-short {
+          display: none;
+        }
+        @media (max-width: 640px) {
+          .terminal-backdrop {
+            padding: 8px !important;
+          }
+          .terminal-window {
+            height: 84vh !important;
+            max-height: 84vh !important;
+            border-radius: 12px !important;
+          }
+          .terminal-content {
+            padding: 14px 12px !important;
+            font-size: 0.82rem !important;
+          }
+          .terminal-footer {
+            padding: 8px 12px !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 4px !important;
+            font-size: 0.7rem !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .terminal-prompt-full {
+            display: none !important;
+          }
+          .terminal-prompt-short {
+            display: inline !important;
+          }
+        }
+      `}</style>
     </div>
   );
 };
