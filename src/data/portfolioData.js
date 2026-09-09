@@ -142,7 +142,7 @@ export const portfolioData = {
       skills: ["React", "JavaScript", "Node.js", "Express", "PostgreSQL", "MongoDB"]
     },
     {
-      period: "2024 - Present",
+      period: "2026 - Present",
       role: "Independent Full Stack Web Developer",
       company: "Personal & Production Projects",
       location: "Ahmedabad, India",
