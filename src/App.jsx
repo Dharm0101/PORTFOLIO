@@ -6,7 +6,6 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { ProjectModal } from './components/ProjectModal';
 import { Experience } from './components/Experience';
-import { Testimonials } from './components/Testimonials';
 import { TerminalWidget } from './components/TerminalWidget';
 import { ResumeModal } from './components/ResumeModal';
 import { Contact } from './components/Contact';
@@ -64,7 +63,6 @@ export function App() {
         <Skills />
         <Projects onSelectProject={(p) => setSelectedProject(p)} />
         <Experience />
-        <Testimonials />
         <Contact onShowToast={showToast} />
       </main>
 

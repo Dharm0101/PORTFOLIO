@@ -24,7 +24,6 @@ export const Navbar = ({ theme, setTheme, onOpenTerminal, onOpenResume }) => {
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
     { label: 'Journey', href: '#experience' },
-    { label: 'Testimonials', href: '#testimonials' },
     { label: 'Contact', href: '#contact' },
   ];
 

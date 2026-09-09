@@ -156,30 +156,6 @@ export const portfolioData = {
     }
   ],
 
-  testimonials: [
-    {
-      id: 1,
-      quote: "Dharm demonstrates rapid full-stack execution speed and strong problem solving. His commitment to building clean user interfaces and solid backends is impressive.",
-      author: "Dr. K. Patel",
-      role: "Faculty & Academic Project Guide at LJ University",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80"
-    },
-    {
-      id: 2,
-      quote: "The speed and clarity Dharm brought to his web projects was extraordinary. Delivered clean, modular, and responsive code across both frontend and backend.",
-      author: "Marcus Chen",
-      role: "Project Reviewer & Senior Web Engineer",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80"
-    },
-    {
-      id: 3,
-      quote: "Working with Dharm is great. He has the practical skill to turn full-stack web requirements into silky-smooth, responsive user experiences.",
-      author: "Elena Rostova",
-      role: "Full Stack Developer Collaborator",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
-    }
-  ],
-
   terminal: {
     welcome: [
       "╔══════════════════════════════════════════════════════════════════╗",
