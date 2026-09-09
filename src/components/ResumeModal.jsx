@@ -136,7 +136,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
               Professional Summary
             </h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, fontSize: '0.94rem' }}>
-              Passionate Full Stack Developer pursuing B.Tech at LJ University, Ahmedabad. Specialized strictly in Frontend and Backend engineering, with proven capability in designing responsive React applications, building scalable Node.js & Express REST APIs, and architecting PostgreSQL and MongoDB databases.
+              Passionate Full Stack Developer pursuing BE in AIML (2024–2028) at LJ University, Ahmedabad. Specialized strictly in Frontend and Backend engineering, with proven capability in designing responsive React applications, building scalable Node.js & Express REST APIs, and architecting PostgreSQL and MongoDB databases.
             </p>
           </div>
 
@@ -148,17 +148,17 @@ export const ResumeModal = ({ isOpen, onClose }) => {
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '4px' }}>
                 <strong style={{ fontSize: '1.05rem', color: 'var(--text-primary)' }}>
-                  B.Tech (Undergraduate)
+                  BE in Artificial Intelligence & Machine Learning (AIML)
                 </strong>
                 <span style={{ fontSize: '0.82rem', fontFamily: 'var(--font-mono)', color: 'var(--accent-cyan)' }}>
-                  2022 - 2026
+                  2024 - 2028
                 </span>
               </div>
               <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '8px' }}>
                 LJ University • Ahmedabad, Gujarat, India
               </div>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                Core studies in software engineering, database systems, data structures, and algorithms. Actively developing production-grade web platforms.
+                Bachelor of Engineering in Artificial Intelligence & Machine Learning (AIML). Foundational studies in software engineering, database architectures, data structures, and production web systems.
               </p>
             </div>
           </div>

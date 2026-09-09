@@ -25,11 +25,11 @@ export const portfolioData = {
     stats: [
       { label: "Projects Completed", value: "3+" },
       { label: "Core Focus", value: "Full Stack" },
-      { label: "LJ University", value: "B.Tech" },
+      { label: "LJ University", value: "BE AIML" },
       { label: "Code Quality", value: "100%" }
     ],
     bio: [
-      "I am a passionate Full Stack Developer pursuing my B.Tech at LJ University, Ahmedabad. My engineering focus is dedicated strictly to Frontend and Backend development, turning ideas into scalable, reliable, and user-centric web applications.",
+      "I am a passionate Full Stack Developer pursuing my BE in AIML (2024–2028) at LJ University, Ahmedabad. My engineering focus is dedicated strictly to Frontend and Backend development, turning ideas into scalable, reliable, and user-centric web applications.",
       "I specialize in building responsive, polished user interfaces using React, JavaScript, and modern CSS, paired with high-performance backend architectures, RESTful APIs, and secure database integrations using Node.js, Express, PostgreSQL, and MongoDB."
     ]
   },
@@ -129,13 +129,13 @@ export const portfolioData = {
 
   experience: [
     {
-      period: "2022 - 2026",
-      role: "B.Tech Undergraduate",
+      period: "2024 - 2028",
+      role: "BE in AIML (Undergraduate)",
       company: "LJ University",
       location: "Ahmedabad, Gujarat, India",
-      description: "Undergraduate degree focusing on software engineering principles, algorithms, data structures, and web technologies.",
+      description: "Bachelor of Engineering degree in Artificial Intelligence & Machine Learning (AIML) at LJ University, building strong foundations in software engineering, algorithms, and full-stack web applications.",
       achievements: [
-        "Pursuing degree coursework in computer science, software engineering, and database systems at LJ University.",
+        "Pursuing BE in AIML coursework in software engineering, algorithms, and database architectures at LJ University.",
         "Engineered end-to-end full stack web applications connecting modern React client interfaces with Node.js backends.",
         "Collaborated on campus technical projects, developer hackathons, and software showcases."
       ],
@@ -190,7 +190,7 @@ export const portfolioData = {
     ],
     commands: {
       help: "Available commands:\n  • about     - View bio, education (LJ University), and focus\n  • skills    - List Frontend & Backend tech proficiencies\n  • projects  - Summary of featured full stack projects\n  • contact   - Direct contact channels and social links\n  • hire      - Why collaborate with Dharm Mendpara\n  • theme     - Cycle active color scheme\n  • sudo      - Try if you dare ;)\n  • clear     - Reset the terminal output",
-      about: "Dharm Mendpara | Full Stack Developer\nEducation: B.Tech from LJ University, Ahmedabad.\nFocus: Modern Frontend Interfaces & Scalable Backend Web Systems.",
+      about: "Dharm Mendpara | Full Stack Developer\nEducation: BE in AIML (2024-2028) from LJ University, Ahmedabad.\nFocus: Modern Frontend Interfaces & Scalable Backend Web Systems.",
       skills: "Core Proficiencies:\n• Frontend: React, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Responsive Design\n• Backend: Node.js, Express.js, RESTful APIs, PostgreSQL, MongoDB, JWT Auth, Git",
       projects: "Featured Showcase:\n1. TEE VERSE        - Heavyweight Streetwear & Graphic Tees (Live: https://tee-verse-mu.vercel.app/)\n2. Drive Hub        - Smart Vehicle Rental Marketplace (Live: https://drive-rental-mu.vercel.app/)\n3. Brahmani Textile - Enterprise Billing & Inventory ERP System (React/Node/PostgreSQL/PDFKit)",
       contact: "Direct Channels:\n• Email: dharmmrndpara@gmail.com\n• Location: Ahmedabad, Gujarat, India\n• GitHub: https://github.com/Dharm0101\n• LinkedIn: https://linkedin.com",

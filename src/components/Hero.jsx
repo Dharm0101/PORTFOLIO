@@ -11,7 +11,7 @@ export const Hero = ({ onOpenTerminal, onOpenResume }) => {
     "Full Stack Web Developer",
     "Frontend Specialist (React & UI/UX)",
     "Backend Developer (Node.js & Express)",
-    "B.Tech Scholar @ LJ University"
+    "BE in AIML (2024-2028) @ LJ University"
   ];
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
