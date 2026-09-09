@@ -10,7 +10,7 @@ export const portfolioData = {
     location: "Ahmedabad, Gujarat, India (Open to Remote / Relocation)",
     email: "dharmmrndpara@gmail.com",
     github: "https://github.com/Dharm0101",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/dharm-mendpara-1a076b321/",
     twitter: "https://x.com",
     status: {
       available: true,
@@ -163,7 +163,7 @@ export const portfolioData = {
       about: "Dharm Mendpara | Full Stack Developer\nEducation: BE in AIML (2024-2028) from LJ University, Ahmedabad.\nFocus: Modern Frontend Interfaces & Scalable Backend Web Systems.",
       skills: "Core Proficiencies:\n• Frontend: React, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Responsive Design\n• Backend: Node.js, Express.js, RESTful APIs, PostgreSQL, MongoDB, JWT Auth, Git",
       projects: "Featured Showcase:\n1. TEE VERSE        - Heavyweight Streetwear & Graphic Tees (Live: https://tee-verse-mu.vercel.app/)\n2. Drive Hub        - Smart Vehicle Rental Marketplace (Live: https://drive-rental-mu.vercel.app/)\n3. Brahmani Textile - Enterprise Billing & Inventory ERP System (React/Node/PostgreSQL/PDFKit)",
-      contact: "Direct Channels:\n• Email: dharmmrndpara@gmail.com\n• Location: Ahmedabad, Gujarat, India\n• GitHub: https://github.com/Dharm0101\n• LinkedIn: https://linkedin.com",
+      contact: "Direct Channels:\n• Email: dharmmrndpara@gmail.com\n• Location: Ahmedabad, Gujarat, India\n• GitHub: https://github.com/Dharm0101\n• LinkedIn: https://www.linkedin.com/in/dharm-mendpara-1a076b321/",
       hire: "✨ Why collaborate with Dharm Mendpara?\n✓ Solid foundational knowledge from LJ University\n✓ Proven capacity to build complete frontend & backend web applications\n✓ Relentless drive, curiosity, and rapid execution velocity",
       sudo: "Nice try! Permission denied: User is already operating as root administrator ⚡"
     }

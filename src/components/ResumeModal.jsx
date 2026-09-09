@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { portfolioData } from '../data/portfolioData';
-import { X, Printer, Download, Mail, Globe, MapPin, CheckCircle2 } from 'lucide-react';
+import { X, Printer, Download, Mail, Globe, MapPin, CheckCircle2, Linkedin } from 'lucide-react';
 
 export const ResumeModal = ({ isOpen, onClose }) => {
   const { personal, skills, experience } = portfolioData;
@@ -133,6 +133,14 @@ export const ResumeModal = ({ isOpen, onClose }) => {
                 style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--accent-cyan)', textDecoration: 'none' }}
               >
                 <Globe size={14} /> github.com/Dharm0101
+              </a>
+              <a
+                href={personal.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--accent-cyan)', textDecoration: 'none' }}
+              >
+                <Linkedin size={14} /> linkedin.com/in/dharm-mendpara
               </a>
             </div>
           </div>
