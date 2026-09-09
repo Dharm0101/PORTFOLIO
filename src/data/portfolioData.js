@@ -1,11 +1,6 @@
-import avatarImg from '../assets/avatar.png';
 import projectTeeverseImg from '../assets/project-teeverse.jpg';
 import projectDrivehubImg from '../assets/project-drivehub.jpg';
 import projectBrahmaniImg from '../assets/project-brahmani-textile.jpg';
-import projectAiImg from '../assets/project-ai.png';
-import projectCloudImg from '../assets/project-cloud.jpg';
-import projectFintechImg from '../assets/project-fintech.jpg';
-import projectDevtoolsImg from '../assets/project-devtools.jpg';
 
 export const portfolioData = {
   personal: {
@@ -17,7 +12,6 @@ export const portfolioData = {
     github: "https://github.com/Dharm0101",
     linkedin: "https://linkedin.com",
     twitter: "https://x.com",
-    avatar: avatarImg,
     status: {
       available: true,
       text: "Available for Frontend & Backend roles & projects"

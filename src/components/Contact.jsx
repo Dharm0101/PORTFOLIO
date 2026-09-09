@@ -52,7 +52,7 @@ export const Contact = ({ onShowToast }) => {
     setTimeout(() => {
       setSubmitting(false);
       setSubmitted(true);
-      onShowToast('Message transmitted successfully! Alex will get back to you shortly.');
+      onShowToast('Message transmitted successfully! Dharm will get back to you shortly.');
       setFormData({ name: '', email: '', subject: '', message: '' });
     }, 1200);
   };
