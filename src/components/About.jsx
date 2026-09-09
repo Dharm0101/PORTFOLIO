@@ -7,19 +7,19 @@ export const About = ({ onOpenResume }) => {
 
   const pillars = [
     {
-      icon: <Cpu size={24} style={{ color: 'var(--accent-cyan)' }} />,
-      title: "Resilient Distributed Systems",
-      description: "Designing decoupled, fault-tolerant microservices with automated failover and sub-50ms API latency."
+      icon: <Zap size={24} style={{ color: 'var(--accent-cyan)' }} />,
+      title: "Modern Frontend Interfaces",
+      description: "Crafting fluid, responsive, and mobile-first user interfaces using React, JavaScript, and modern CSS."
     },
     {
-      icon: <Zap size={24} style={{ color: '#a855f7' }} />,
-      title: "High-Performance Interfaces",
-      description: "Obsessive focus on Core Web Vitals, 60fps interaction rendering, and accessible fluid design systems."
+      icon: <Cpu size={24} style={{ color: '#a855f7' }} />,
+      title: "Robust Backend APIs",
+      description: "Architecting clean RESTful services, server-side authentication, and business logic with Node.js and Express."
     },
     {
       icon: <ShieldCheck size={24} style={{ color: 'var(--accent-emerald)' }} />,
-      title: "Production-Grade Security",
-      description: "Zero-trust auth, encrypted communication tunnels, RBAC safeguards, and automated compliance pipelines."
+      title: "Reliable Databases",
+      description: "Managing structured and document databases with PostgreSQL and MongoDB for dependable data integrity."
     }
   ];
 
@@ -33,7 +33,7 @@ export const About = ({ onOpenResume }) => {
             Engineering with <span className="gradient-text">Precision & Vision</span>
           </h2>
           <p className="section-subtitle">
-            Bridging complex distributed cloud infrastructure with intuitive, ultra-polished digital experiences.
+            Combining responsive modern frontend interfaces with robust, reliable backend web architectures.
           </p>
         </div>
 

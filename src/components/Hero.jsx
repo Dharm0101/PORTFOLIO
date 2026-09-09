@@ -8,10 +8,10 @@ export const Hero = ({ onOpenTerminal, onOpenResume }) => {
 
   // Rotating roles
   const roles = [
-    "AI & Machine Learning Engineer",
-    "AIML Scholar @ LJ University",
-    "Deep Learning & LLM Specialist",
-    "Full Stack Intelligent Systems Developer"
+    "Full Stack Web Developer",
+    "Frontend Specialist (React & UI/UX)",
+    "Backend Developer (Node.js & Express)",
+    "B.Tech Scholar @ LJ University"
   ];
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');

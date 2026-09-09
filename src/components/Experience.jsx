@@ -10,12 +10,12 @@ export const Experience = () => {
       <div className="container">
         {/* Header */}
         <div className="section-header">
-          <span className="section-tagline">// 04. Career Journey</span>
+          <span className="section-tagline">// 04. Developer Journey</span>
           <h2 className="section-title">
-            Work Experience & <span className="gradient-text">Leadership</span>
+            Education & <span className="gradient-text">Milestones</span>
           </h2>
           <p className="section-subtitle">
-            A chronicle of high-impact engineering leadership, platform scaling, and product execution.
+            A chronicle of academic foundations at LJ University and real-world full-stack web engineering milestones.
           </p>
         </div>
 

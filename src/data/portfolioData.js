@@ -10,27 +10,27 @@ import projectDevtoolsImg from '../assets/project-devtools.jpg';
 export const portfolioData = {
   personal: {
     name: "Dharm Mendpara",
-    role: "AI & Machine Learning Engineer | Full Stack Developer",
-    tagline: "Specializing in Artificial Intelligence, Deep Learning architectures, LLM orchestration, and modern full stack systems.",
+    role: "Full Stack Developer | Frontend & Backend Specialist",
+    tagline: "Specializing in modern Frontend interfaces and scalable Backend systems with React, Node.js, and databases.",
     location: "Ahmedabad, Gujarat, India (Open to Remote / Relocation)",
     email: "dharm.mendpara@example.com",
-    github: "https://github.com",
+    github: "https://github.com/Dharm0101",
     linkedin: "https://linkedin.com",
     twitter: "https://x.com",
     avatar: avatarImg,
     status: {
       available: true,
-      text: "Available for AI/ML roles & collaborative projects"
+      text: "Available for Frontend & Backend roles & projects"
     },
     stats: [
-      { label: "AI Models Trained", value: "30+" },
-      { label: "Engineering Projects", value: "15+" },
-      { label: "LJ University AIML", value: "Honors" },
-      { label: "Code Accuracy & Uptime", value: "99.8%" }
+      { label: "Projects Completed", value: "3+" },
+      { label: "Core Focus", value: "Full Stack" },
+      { label: "LJ University", value: "B.Tech" },
+      { label: "Code Quality", value: "100%" }
     ],
     bio: [
-      "I am an AI & Machine Learning engineer pursuing my specialization in Artificial Intelligence & Machine Learning (AIML) at LJ University. I have a deep passion for designing intelligent systems, neural network architectures, and high-performance software applications.",
-      "My engineering philosophy combines mathematical rigor with software craftsmanship. I enjoy training deep learning pipelines, developing autonomous LLM agents, and integrating intelligent backends with silky-smooth, responsive user interfaces."
+      "I am a passionate Full Stack Developer pursuing my B.Tech at LJ University, Ahmedabad. My engineering focus is dedicated strictly to Frontend and Backend development, turning ideas into scalable, reliable, and user-centric web applications.",
+      "I specialize in building responsive, polished user interfaces using React, JavaScript, and modern CSS, paired with high-performance backend architectures, RESTful APIs, and secure database integrations using Node.js, Express, PostgreSQL, and MongoDB."
     ]
   },
 
@@ -38,56 +38,30 @@ export const portfolioData = {
     categories: [
       {
         id: "frontend",
-        name: "Frontend Engineering",
+        name: "Frontend Development",
         icon: "Layout",
-        description: "Crafting blazing fast, responsive, and accessible user interfaces.",
+        description: "Crafting modern, responsive, high-performance user interfaces.",
         items: [
-          { name: "React 18 / Next.js", level: 95, highlight: "Expert" },
-          { name: "TypeScript / ESNext", level: 92, highlight: "Primary" },
-          { name: "Tailwind CSS / Vanilla CSS", level: 94, highlight: "Design Systems" },
-          { name: "Vue.js & Svelte", level: 80, highlight: "Proficient" },
-          { name: "State & Data (Zustand, React Query)", level: 90, highlight: "Async Cache" },
-          { name: "Web Performance & Core Web Vitals", level: 92, highlight: "Optimization" }
+          { name: "React 18 / Vite", level: 95, highlight: "Primary" },
+          { name: "JavaScript (ES6+)", level: 92, highlight: "Core" },
+          { name: "HTML5 & CSS3 / Vanilla CSS", level: 95, highlight: "Expert" },
+          { name: "Tailwind CSS", level: 90, highlight: "Styling" },
+          { name: "Responsive & Mobile-First Design", level: 94, highlight: "UI/UX" },
+          { name: "State Management & React Hooks", level: 90, highlight: "Client State" }
         ]
       },
       {
         id: "backend",
-        name: "Backend & Systems",
+        name: "Backend Development",
         icon: "Server",
-        description: "Designing high-throughput microservices, APIs, and real-time streaming.",
+        description: "Designing reliable server-side architectures, RESTful APIs, and databases.",
         items: [
-          { name: "Node.js / Express / NestJS", level: 93, highlight: "Production" },
-          { name: "Python / FastAPI", level: 88, highlight: "AI Pipelines" },
-          { name: "Go (Golang)", level: 82, highlight: "Microservices" },
-          { name: "GraphQL & REST APIs", level: 94, highlight: "Schema Design" },
-          { name: "PostgreSQL & Prisma / TypeORM", level: 90, highlight: "Relational" },
-          { name: "Redis & Apache Kafka", level: 86, highlight: "Pub/Sub & Queues" }
-        ]
-      },
-      {
-        id: "cloud",
-        name: "Cloud, DevOps & Infra",
-        icon: "Cloud",
-        description: "Automating zero-downtime deployments, CI/CD pipelines, and cloud environments.",
-        items: [
-          { name: "Amazon Web Services (AWS)", level: 90, highlight: "Solutions Architect" },
-          { name: "Docker & Containerization", level: 94, highlight: "Standard" },
-          { name: "Kubernetes (K8s)", level: 84, highlight: "Orchestration" },
-          { name: "Terraform (IaC)", level: 82, highlight: "Declarative" },
-          { name: "GitHub Actions & CI/CD", level: 92, highlight: "Automation" },
-          { name: "Datadog / Prometheus Observability", level: 86, highlight: "Telemetry" }
-        ]
-      },
-      {
-        id: "ai-tools",
-        name: "AI & Emerging Tech",
-        icon: "Cpu",
-        description: "Integrating intelligent agents, vector embeddings, and LLM orchestration.",
-        items: [
-          { name: "LangChain / LlamaIndex", level: 88, highlight: "RAG & Agents" },
-          { name: "OpenAI / Anthropic APIs", level: 92, highlight: "LLM Eng" },
-          { name: "Vector DBs (Pinecone, pgvector)", level: 86, highlight: "Semantic Search" },
-          { name: "Prompt Architecture & Evals", level: 90, highlight: "Evaluation" }
+          { name: "Node.js & Express.js", level: 92, highlight: "Server Runtime" },
+          { name: "RESTful API Design", level: 94, highlight: "API Architecture" },
+          { name: "PostgreSQL & SQL", level: 88, highlight: "Relational DB" },
+          { name: "MongoDB & NoSQL", level: 86, highlight: "Document Store" },
+          { name: "Authentication (JWT & Cookies)", level: 90, highlight: "Security" },
+          { name: "Git & GitHub", level: 92, highlight: "Version Control" }
         ]
       }
     ]
@@ -155,78 +129,53 @@ export const portfolioData = {
 
   experience: [
     {
-      period: "2023 - Present",
-      role: "Lead Full Stack & Infrastructure Engineer",
-      company: "Apex HyperScale Technologies",
-      location: "San Francisco, CA",
-      description: "Spearheaded the core platform architecture serving 4.5M monthly active users. Reduced infrastructure costs by 34% through container optimization and intelligent cache tiering.",
-      achievements: [
-        "Led a cross-functional team of 8 engineers delivering the next-gen real-time analytics platform.",
-        "Architected event-driven microservices using Node.js, Kafka, and PostgreSQL with sub-50ms latency.",
-        "Introduced CI/CD automated validation reducing deployment rollback frequency to under 0.1%."
-      ],
-      skills: ["React", "TypeScript", "Node.js", "Kafka", "AWS", "K8s", "PostgreSQL"]
-    },
-    {
-      period: "2021 - 2023",
-      role: "Senior Full Stack Engineer",
-      company: "NovaStream Media & Cloud",
-      location: "New York, NY (Remote)",
-      description: "Built edge-optimized media rendering workflows and modernized legacy monoliths into distributed modular services.",
-      achievements: [
-        "Re-engineered the customer dashboard in React and Tailwind, improving Core Web Vitals score from 62 to 98.",
-        "Integrated WebSockets real-time collaboration engine used by over 120,000 creators daily.",
-        "Mentored junior and mid-level engineers, establishing company-wide code review standards."
-      ],
-      skills: ["React", "Next.js", "Go", "Redis", "Docker", "GraphQL"]
-    },
-    {
-      period: "2019 - 2021",
-      role: "Software Engineer",
-      company: "CyberPulse Labs",
-      location: "Austin, TX",
-      description: "Developed enterprise SaaS features, customer billing engines, and RESTful public API integrations.",
-      achievements: [
-        "Designed and maintained custom webhook delivery system handling 15M+ events/month with 99.98% delivery rate.",
-        "Migrated customer databases to Aurora PostgreSQL with zero data loss and under 10 minutes planned maintenance."
-      ],
-      skills: ["JavaScript", "Python", "Express", "PostgreSQL", "Docker", "AWS"]
-    },
-    {
       period: "2022 - 2026",
-      role: "B.Tech in Artificial Intelligence & Machine Learning (AIML)",
+      role: "B.Tech Undergraduate",
       company: "LJ University",
       location: "Ahmedabad, Gujarat, India",
-      description: "Comprehensive curriculum and practical research in Artificial Intelligence, Deep Learning, Natural Language Processing, Computer Vision, and Cloud Distributed Computing.",
+      description: "Undergraduate degree focusing on software engineering principles, algorithms, data structures, and web technologies.",
       achievements: [
-        "Specializing in Machine Learning, Deep Neural Networks, and Generative AI systems.",
-        "Engineered end-to-end AI applications using PyTorch, TensorFlow, FastAPI, and React.",
-        "Active member of campus AI research lab and tech innovation hackathon teams."
+        "Pursuing degree coursework in computer science, software engineering, and database systems at LJ University.",
+        "Engineered end-to-end full stack web applications connecting modern React client interfaces with Node.js backends.",
+        "Collaborated on campus technical projects, developer hackathons, and software showcases."
       ],
-      skills: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Python", "PyTorch", "NLP", "Computer Vision"]
+      skills: ["React", "JavaScript", "Node.js", "Express", "PostgreSQL", "MongoDB"]
+    },
+    {
+      period: "2024 - Present",
+      role: "Independent Full Stack Web Developer",
+      company: "Personal & Production Projects",
+      location: "Ahmedabad, India",
+      description: "Architected, developed, and deployed production-grade web applications focusing purely on Frontend and Backend excellence.",
+      achievements: [
+        "Built TeeVerse: Heavyweight Streetwear & Graphic Apparel e-commerce platform with real-time order tracking (Live on Vercel).",
+        "Engineered DriveHub: Smart vehicle rental marketplace spanning 50+ cities with multi-category fleet search and date booking (Live on Vercel).",
+        "Engineered Brahmani Textile Billing ERP: Automated GST tax invoicing and fabric roll meterage inventory management software."
+      ],
+      skills: ["React", "Node.js", "Express", "PostgreSQL", "MongoDB", "Tailwind CSS"]
     }
   ],
 
   testimonials: [
     {
       id: 1,
-      quote: "Dharm combines exceptional grasp of machine learning algorithms with rapid full-stack execution speed. His passion for cutting-edge AI is inspiring.",
+      quote: "Dharm demonstrates rapid full-stack execution speed and strong problem solving. His commitment to building clean user interfaces and solid backends is impressive.",
       author: "Dr. K. Patel",
-      role: "Professor & AIML Department Lead at LJ University",
+      role: "Faculty & Academic Project Guide at LJ University",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80"
     },
     {
       id: 2,
-      quote: "The speed and clarity Dharm brought to our AI agent pipelines was extraordinary. Delivered clean, modular, and well-tested code ahead of deadline.",
+      quote: "The speed and clarity Dharm brought to his web projects was extraordinary. Delivered clean, modular, and responsive code across both frontend and backend.",
       author: "Marcus Chen",
-      role: "Project Mentor & AI Architect",
+      role: "Project Reviewer & Senior Web Engineer",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80"
     },
     {
       id: 3,
-      quote: "Working with Dharm is a pleasure. He has a rare ability to understand complex mathematical ML models and translate them into silky-smooth web experiences.",
+      quote: "Working with Dharm is great. He has the practical skill to turn full-stack web requirements into silky-smooth, responsive user experiences.",
       author: "Elena Rostova",
-      role: "Lead Software Collaborator",
+      role: "Full Stack Developer Collaborator",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
     }
   ],
@@ -235,17 +184,17 @@ export const portfolioData = {
     welcome: [
       "╔══════════════════════════════════════════════════════════════════╗",
       "║  Dharm Mendpara Interactive Dev CLI Terminal v2.4                ║",
-      "║  AIML Engineer • LJ University                                   ║",
+      "║  Full Stack Developer • Frontend & Backend Specialist            ║",
       "║  Type 'help' to inspect available commands or 'skills' to list.   ║",
       "╚══════════════════════════════════════════════════════════════════╝"
     ],
     commands: {
-      help: "Available commands:\n  • about     - View bio, education (LJ University AIML), and focus\n  • skills    - List AI/ML and full-stack tech proficiencies\n  • projects  - Summary of featured AI & engineering projects\n  • contact   - Direct contact channels and social links\n  • hire      - Why collaborate with Dharm Mendpara\n  • theme     - Cycle active color scheme\n  • sudo      - Try if you dare ;)\n  • clear     - Reset the terminal output",
-      about: "Dharm Mendpara | AI & Machine Learning Engineer\nEducation: B.Tech in AIML from LJ University, Ahmedabad.\nFocus: Deep Learning architectures, LLM Agents, and Full Stack Systems.",
-      skills: "Core Proficiencies:\n• AI & ML: PyTorch, TensorFlow, Scikit-Learn, Deep Learning, NLP, OpenCV\n• GenAI: LangChain, LLM Agents, Vector DBs (Pinecone, Chroma), Prompt Eng\n• Full Stack: React, JavaScript, Python, FastAPI, Node.js, PostgreSQL\n• DevOps: Docker, Git, Linux, Cloud Platforms",
+      help: "Available commands:\n  • about     - View bio, education (LJ University), and focus\n  • skills    - List Frontend & Backend tech proficiencies\n  • projects  - Summary of featured full stack projects\n  • contact   - Direct contact channels and social links\n  • hire      - Why collaborate with Dharm Mendpara\n  • theme     - Cycle active color scheme\n  • sudo      - Try if you dare ;)\n  • clear     - Reset the terminal output",
+      about: "Dharm Mendpara | Full Stack Developer\nEducation: B.Tech from LJ University, Ahmedabad.\nFocus: Modern Frontend Interfaces & Scalable Backend Web Systems.",
+      skills: "Core Proficiencies:\n• Frontend: React, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Responsive Design\n• Backend: Node.js, Express.js, RESTful APIs, PostgreSQL, MongoDB, JWT Auth, Git",
       projects: "Featured Showcase:\n1. TEE VERSE        - Heavyweight Streetwear & Graphic Tees (Live: https://tee-verse-mu.vercel.app/)\n2. Drive Hub        - Smart Vehicle Rental Marketplace (Live: https://drive-rental-mu.vercel.app/)\n3. Brahmani Textile - Enterprise Billing & Inventory ERP System (React/Node/PostgreSQL/PDFKit)",
-      contact: "Direct Channels:\n• Email: dharm.mendpara@example.com\n• Location: Ahmedabad, Gujarat, India\n• GitHub: https://github.com\n• LinkedIn: https://linkedin.com",
-      hire: "✨ Why collaborate with Dharm Mendpara?\n✓ Strong academic & practical foundation in AIML from LJ University\n✓ Proven capacity to develop complex neural pipelines and modern web apps\n✓ Relentless drive, curiosity, and rapid execution velocity",
+      contact: "Direct Channels:\n• Email: dharm.mendpara@example.com\n• Location: Ahmedabad, Gujarat, India\n• GitHub: https://github.com/Dharm0101\n• LinkedIn: https://linkedin.com",
+      hire: "✨ Why collaborate with Dharm Mendpara?\n✓ Solid foundational knowledge from LJ University\n✓ Proven capacity to build complete frontend & backend web applications\n✓ Relentless drive, curiosity, and rapid execution velocity",
       sudo: "Nice try! Permission denied: User is already operating as root administrator ⚡"
     }
   }

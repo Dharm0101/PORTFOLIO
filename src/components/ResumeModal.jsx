@@ -102,7 +102,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
           <div style={{ marginBottom: '28px', borderBottom: '2px solid var(--border-glass)', paddingBottom: '20px' }}>
             <h1 style={{ fontSize: '2.2rem', marginBottom: '6px' }}>{personal.name}</h1>
             <p style={{ fontSize: '1.15rem', color: 'var(--accent-cyan)', fontWeight: 600, marginBottom: '12px' }}>
-              {personal.role}
+              Full Stack Developer (Frontend & Backend)
             </p>
             <div
               style={{
@@ -119,65 +119,103 @@ export const ResumeModal = ({ isOpen, onClose }) => {
               <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <Mail size={14} /> {personal.email}
               </span>
-              <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <Globe size={14} /> dharm.dev
-              </span>
+              <a
+                href={personal.github}
+                target="_blank"
+                rel="noreferrer"
+                style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--accent-cyan)', textDecoration: 'none' }}
+              >
+                <Globe size={14} /> github.com/Dharm0101
+              </a>
             </div>
           </div>
 
-          {/* Executive Summary */}
+          {/* Professional Summary */}
           <div style={{ marginBottom: '28px' }}>
-            <h3 style={{ fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--accent-primary)', marginBottom: '10px' }}>
-              Executive Summary
+            <h3 style={{ fontSize: '1.05rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--accent-primary)', marginBottom: '10px' }}>
+              Professional Summary
             </h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.7, fontSize: '0.94rem' }}>
-              {personal.bio[0]}
+              Passionate Full Stack Developer pursuing B.Tech at LJ University, Ahmedabad. Specialized strictly in Frontend and Backend engineering, with proven capability in designing responsive React applications, building scalable Node.js & Express REST APIs, and architecting PostgreSQL and MongoDB databases.
             </p>
           </div>
 
-          {/* Experience Section */}
-          <div style={{ marginBottom: '32px' }}>
-            <h3 style={{ fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--accent-primary)', marginBottom: '16px' }}>
-              Experience & Achievements
+          {/* Education */}
+          <div style={{ marginBottom: '28px' }}>
+            <h3 style={{ fontSize: '1.05rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--accent-primary)', marginBottom: '14px' }}>
+              Education
             </h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
-              {experience.map((exp, idx) => (
-                <div key={idx}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '4px' }}>
-                    <strong style={{ fontSize: '1.05rem', color: 'var(--text-primary)' }}>{exp.role}</strong>
-                    <span style={{ fontSize: '0.82rem', fontFamily: 'var(--font-mono)', color: 'var(--accent-cyan)' }}>
-                      {exp.period}
-                    </span>
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '4px' }}>
+                <strong style={{ fontSize: '1.05rem', color: 'var(--text-primary)' }}>
+                  B.Tech (Undergraduate)
+                </strong>
+                <span style={{ fontSize: '0.82rem', fontFamily: 'var(--font-mono)', color: 'var(--accent-cyan)' }}>
+                  2022 - 2026
+                </span>
+              </div>
+              <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '8px' }}>
+                LJ University • Ahmedabad, Gujarat, India
+              </div>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                Core studies in software engineering, database systems, data structures, and algorithms. Actively developing production-grade web platforms.
+              </p>
+            </div>
+          </div>
+
+          {/* Technical Proficiencies - ONLY Frontend & Backend */}
+          <div style={{ marginBottom: '28px' }}>
+            <h3 style={{ fontSize: '1.05rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--accent-primary)', marginBottom: '14px' }}>
+              Technical Proficiencies (Frontend & Backend Only)
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }}>
+              {skills.categories.map((cat) => (
+                <div key={cat.id} style={{ background: 'rgba(255,255,255,0.03)', padding: '16px', borderRadius: '12px', border: '1px solid var(--border-glass)' }}>
+                  <strong style={{ fontSize: '0.92rem', color: 'var(--accent-cyan)', display: 'block', marginBottom: '8px' }}>
+                    {cat.name}
+                  </strong>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+                    {cat.items.map(i => i.name).join(' • ')}
                   </div>
-                  <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '8px' }}>
-                    {exp.company} • {exp.location}
-                  </div>
-                  <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                    {exp.achievements.map((ach, aIdx) => (
-                      <li key={aIdx} style={{ marginBottom: '4px' }}>
-                        {ach}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Skills Breakdown */}
-          <div>
-            <h3 style={{ fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--accent-primary)', marginBottom: '14px' }}>
-              Technical Proficiencies
+          {/* Featured Full Stack Projects */}
+          <div style={{ marginBottom: '20px' }}>
+            <h3 style={{ fontSize: '1.05rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--accent-primary)', marginBottom: '16px' }}>
+              Featured Engineering Projects
             </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }}>
-              {skills.categories.map((cat) => (
-                <div key={cat.id} style={{ background: 'rgba(255,255,255,0.03)', padding: '14px', borderRadius: '10px', border: '1px solid var(--border-glass)' }}>
-                  <strong style={{ fontSize: '0.88rem', color: 'var(--accent-cyan)', display: 'block', marginBottom: '6px' }}>
-                    {cat.name}
-                  </strong>
-                  <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                    {cat.items.map(i => i.name).join(', ')}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              {portfolioData.projects.map((proj) => (
+                <div key={proj.id} style={{ background: 'rgba(255,255,255,0.02)', padding: '18px', borderRadius: '12px', border: '1px solid var(--border-glass)' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
+                    <strong style={{ fontSize: '1.02rem', color: 'var(--text-primary)' }}>{proj.title}</strong>
+                    <div style={{ display: 'flex', gap: '10px', fontSize: '0.82rem' }}>
+                      {proj.liveUrl && (
+                        <a href={proj.liveUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-cyan)', textDecoration: 'none' }}>
+                          Live Demo ↗
+                        </a>
+                      )}
+                      {proj.githubUrl && (
+                        <a href={proj.githubUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>
+                          GitHub ↗
+                        </a>
+                      )}
+                    </div>
                   </div>
+                  <div style={{ fontSize: '0.84rem', color: 'var(--accent-emerald)', marginBottom: '8px', fontFamily: 'var(--font-mono)' }}>
+                    {proj.technologies.slice(0, 6).join(' | ')}
+                  </div>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '8px' }}>
+                    {proj.summary}
+                  </p>
+                  <ul style={{ paddingLeft: '20px', color: 'var(--text-muted)', fontSize: '0.84rem', lineHeight: 1.5 }}>
+                    {proj.features.slice(0, 2).map((feat, fIdx) => (
+                      <li key={fIdx}>{feat}</li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
