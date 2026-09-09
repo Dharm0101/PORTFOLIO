@@ -3,6 +3,7 @@ import { X, ExternalLink, Github, CheckCircle2, Layers, Cpu, Activity } from 'lu
 
 export const ProjectModal = ({ project, onClose }) => {
   useEffect(() => {
+    if (!project) return;
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
     };
@@ -12,7 +13,7 @@ export const ProjectModal = ({ project, onClose }) => {
       window.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'auto';
     };
-  }, [onClose]);
+  }, [project, onClose]);
 
   if (!project) return null;
 

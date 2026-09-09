@@ -6,13 +6,15 @@ export const ResumeModal = ({ isOpen, onClose }) => {
   const { personal, skills, experience } = portfolioData;
 
   useEffect(() => {
+    if (!isOpen) {
+      document.body.style.overflow = 'auto';
+      return;
+    }
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
     };
-    if (isOpen) {
-      window.addEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'hidden';
-    }
+    window.addEventListener('keydown', handleKeyDown);
+    document.body.style.overflow = 'hidden';
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'auto';
