@@ -424,3 +424,16 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Global Print Styles for Clean Resume Export */
+@media print {
+  body.resume-open header,
+  body.resume-open nav,
+  body.resume-open main,
+  body.resume-open footer,
+  body.resume-open .ambient-glow,
+  body.resume-open canvas {
+    display: none !important;
+  }
+}
+
